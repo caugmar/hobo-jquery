@@ -124,7 +124,7 @@ And add something like this to your controller:
 -->
 <def tag="hjq-autocomplete">
 <%
-  options, attrs = attributes.partition_hash(['disabled', 'appendTo', 'autoFocus', 'delay', 'minLength', 'position', 'source'])
+  options, attrs = attributes.partition_hash(['disabled', 'appendTo', 'autoFocus', 'delay', 'minLength', 'position', 'source', 'html'])
   events, html_attrs = attrs.partition_hash(['create', 'search', 'open', 'focus', 'select', 'close', 'change'])
   options["source"] ||= begin
                           complete_target = this_field_reflection.klass
